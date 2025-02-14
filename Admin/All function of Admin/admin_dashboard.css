@@ -1,0 +1,63 @@
+
+.user-section {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.user-section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table th,
+table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+table td img {
+  max-width: 100px;
+  height: auto;
+}
+
+table td:nth-child(2),
+/* Photo column */
+table td:nth-child(7) {
+  /* Password column */
+  text-align: center;
+}
+
+table td:nth-child(2) img {
+  display: block;
+  margin: 0 auto;
+  max-width: 80px;
+  height: auto;
+  border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  table {
+    font-size: 14px;
+  }
+
+  table th,
+  table td {
+    padding: 6px;
+  }
+}

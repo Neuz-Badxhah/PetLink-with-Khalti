@@ -1,0 +1,219 @@
+/* buy_form.css */
+
+/* General Styles */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container Styles */
+.container {
+  max-width: 800px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  padding: 40px;
+  margin: 20px;
+  box-sizing: border-box;
+  background: #fafafa;
+  position: relative;
+}
+
+/* Container Header */
+.container::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  background: #4caf50;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+/* Heading Styles */
+
+/* Section Heading Styles */
+.purchase_form {
+  border: 2px solid #4caf50;
+  border-radius: 10px;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Align label and input in the same line */
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+label {
+  width: 150px; /* Adjust label width for alignment */
+  font-weight: 500;
+  margin-right: 10px;
+}
+/* Form Group Inputs */
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  box-sizing: border-box;
+  font-size: 1em;
+  background: #ffffff;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #4caf50;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+/* Textarea Styles */
+.form-group textarea {
+  resize: vertical;
+}
+
+/* Radio Group Styles */
+.radio-group {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.radio-group label {
+  display: inline-block;
+  margin-right: 20px;
+  font-weight: 500;
+}
+
+/* Buttons Styles */
+.submit-btn,
+.cancel-btn,
+.back-btn {
+  padding: 16px 22px;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-right: 12px;
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.submit-btn {
+  background: linear-gradient(45deg, #4caf50, #66bb6a);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.submit-btn:hover {
+  background: linear-gradient(45deg, #388e3c, #57a957);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+.cancel-btn {
+  background: linear-gradient(45deg, #f44336, #e57373);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.cancel-btn:hover {
+  background: linear-gradient(45deg, #c62828, #ef5350);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+.back-btn {
+  background: linear-gradient(45deg, #2196f3, #64b5f6);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.back-btn:hover {
+  background: linear-gradient(45deg, #1e88e5, #42a5f5);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Button Hover Effects */
+.cancel-btn:hover,
+.back-btn:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Button Disabled */
+button:disabled {
+  background: #bdbdbd;
+  cursor: not-allowed;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 25px;
+    margin: 10px;
+  }
+
+  .submit-btn,
+  .cancel-btn,
+  .back-btn {
+    padding: 14px 18px;
+    font-size: 1em;
+    margin-right: 8px;
+  }
+}
+/* Form Group Styles */
+#payment {
+  margin-bottom: 20px;
+}
+
+/* Khalti Button Styles */
+#khalti-payment-button {
+  padding: 16px 22px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(45deg, #8e388b, #15041a);
+  color: #fff;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Khalti Button Hover Effect */
+#khalti-payment-button:hover {
+  background: linear-gradient(45deg, #8e388b, #15041a);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  #payment select {
+    font-size: 0.9em;
+    padding: 10px;
+  }
+
+  #khalti-payment-button {
+    font-size: 1em;
+    padding: 14px 20px;
+  }
+}

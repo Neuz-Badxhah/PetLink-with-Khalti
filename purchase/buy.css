@@ -1,0 +1,153 @@
+button {
+  background-color: #007bff;
+  /* Blue background */
+  color: white;
+  /* White text */
+  border: none;
+  /* Remove borders */
+  padding: 10px 20px;
+  /* Add some padding */
+  text-align: center;
+  /* Center the text */
+  text-decoration: none;
+  /* Remove underline from links */
+  display: inline-block;
+  /* Make it inline */
+  font-size: 16px;
+  /* Font size */
+  margin: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Home Button */
+button:hover {
+  background-color: #0056b3;
+  /* Darker blue on hover */
+  transform: scale(1.05);
+  /* Slightly larger on hover */
+}
+
+/* Log Out Button */
+button.logout {
+  background-color: #dc3545;
+  /* Red background for logout */
+}
+
+button.logout:hover {
+  background-color: #c82333;
+  /* Darker red on hover */
+}
+/* Container for all pets */
+.pet-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 20px;
+}
+
+/* Styling for each pet container */
+.pet-container .pet-item {
+  width: 20%;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.pet-container .pet-item:hover {
+  transform: scale(1.02);
+}
+
+/* Styling for the details summary */
+details summary {
+  cursor: pointer;
+  list-style: none;
+  outline: none;
+}
+
+/* Styling for the pet image */
+details summary img {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(24, 21, 21, 0.432);
+  transition: transform 0.2s ease-in-out;
+}
+
+details summary img:hover {
+  transform: scale(1.05);
+}
+
+/* Container for pet details */
+.pet-contain-container {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 10px;
+}
+.pet-contain-container {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 600px;
+  margin: 20px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.pet-contain-container label {
+  font-weight: bold;
+  display: inline-block;
+  margin-right: 10px;
+  color: #333;
+  font-size: 1.1em;
+}
+
+.pet-contain-container p {
+  display: inline-block;
+  margin: 5px 0 15px 0;
+  color: #555;
+}
+
+/* Styling for the video element */
+.pet-contain-container video {
+  display: block;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 30%;
+}
+
+/* Button container styling */
+.button-form {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* Button styling */
+.button-form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-form button:hover {
+  background-color: #0056b3;
+}
+
+.button-form button[type="button"] {
+  background-color: #28a745;
+}
+
+.button-form button[type="button"]:hover {
+  background-color: #218838;
+}

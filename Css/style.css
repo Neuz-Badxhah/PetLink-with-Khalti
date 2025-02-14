@@ -1,0 +1,451 @@
+/* Home Style */
+#home {
+  margin-top: 40px;
+  margin: 10px;
+  padding: 10px;
+  background: white;
+  box-sizing: border-box;
+  box-shadow: 1px 2px 3px black;
+}
+
+/* Custom styles for image slider */
+.image_wrap {
+  width: 100%; /* Adjust width as needed */
+  overflow: hidden;
+  position: relative;
+  animation: carousel 20s infinite linear;
+}
+
+.image_box {
+  display: flex; /* Arrange images horizontally */
+  width: 400%; /* Set width to hold all images (4 times container width) */
+  animation: slide 20s infinite linear; /* Animate image movement */
+}
+
+.image_box img {
+  width: 25%; /* Images take up 25% each */
+  transition: transform 0.5s ease-in-out; /* Smooth image transition */
+}
+
+@keyframes carousel {
+  0% {
+    transform: translateX(-100%); /* Show the last image initially */
+  }
+  100% {
+    transform: translateX(500%); /* Move all images 5 times their width */
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0); /* Start from the first image */
+  }
+  100% {
+    transform: translateX(-100%); /* Move all images to the left by 100% */
+  }
+}
+
+/* Welcome Section */
+.welcome {
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 10%), 0 2px 2px rgb(0 0 0 / 6%),
+    0 0 2px rgb(0 0 0 / 7%);
+}
+/* Feature pet section */
+.featured-categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+.category-card {
+  width: 300px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 10%), 0 2px 2px rgb(0 0 0 / 6%),
+    0 0 2px rgb(0 0 0 / 7%);
+  background-color: #fff;
+}
+.category-card img {
+  margin: 0 auto;
+  width: 80%;
+  height: 50%;
+  justify-content: center;
+  display: block;
+  box-shadow: 1px 1px 4px black;
+}
+.category-card img:hover {
+  transition: 0.3s;
+  transform: scale(1.3);
+  overflow: hidden;
+}
+.category-card h2 {
+  font-size: 20px;
+  margin-top: 10px;
+}
+.category-card p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+.pet-btn {
+  /* Add your button styling here */
+  background-color: #2f0eee; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.pet-btn a {
+  color: inherit; /* Inherit button text color */
+  text-decoration: none; /* Remove underline */
+}
+
+.pet-btn:hover {
+  background-color: #050111; /* Darker blue on hover */
+}
+/* Latest pets */
+/* Styles for the latest pets section */
+.latest {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.latest h3 {
+  text-align: center;
+  color: #333;
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.latest_pet {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.pet-details {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 15px;
+  width: calc(33.333% - 20px);
+  box-sizing: border-box;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.pet-details:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.pet-details img {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.pet-details p {
+  margin: 10px 0;
+  font-family: Arial, sans-serif;
+  color: #555;
+}
+
+.pet-details p strong {
+  color: #333;
+}
+
+.form-buttons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-buttons button {
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  padding: 10px 15px;
+  margin-right: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  width: 48%;
+}
+
+.form-buttons button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .pet-details {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .pet-details {
+    width: 100%;
+  }
+}
+
+/* how it works */
+
+.how-it-works {
+  padding: 50px 0; /* Adjust padding as needed */
+  box-shadow: 0px 4px 4px -2px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.how-it-works h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.steps {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.step {
+  width: 200px; /* Adjust width as needed */
+  margin-bottom: 30px; /* Adjust margin as needed */
+}
+
+.step img {
+  width: 150px; /* Adjust width as needed */
+  height: 150px; /* Adjust height as needed */
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.step p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+/* pet care tips */
+.pet-care-tips {
+  padding: 50px 0; /* Adjust padding as needed */
+  text-align: center;
+}
+
+.pet-care-tips h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.tips {
+  display: block;
+}
+
+.care-tips,
+.training-tips,
+.health-tips {
+  display: block;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: fit-content; /* Adjust width and margin as needed */
+  margin-bottom: 30px; /* Adjust margin as needed */
+  margin-left: 20px;
+  box-shadow: 0px 4px 4px -2px rgba(0, 0, 0, 0.4);
+}
+
+.care-tips h3,
+.training-tips h3,
+.health-tips h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.care-tips ul,
+.training-tips ul,
+.health-tips ul {
+  list-style-type: disc;
+  padding: 0;
+}
+
+.care-tips li,
+.training-tips li,
+.health-tips li {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.care-tips .img img,
+.training-tips .img img,
+.health-tips .img img {
+  width: 300px; /* Adjust width as needed */
+  height: 200px; /* Adjust height as needed */
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px -2px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+.img {
+  margin-left: 50px;
+  margin-right: 50px;
+  width: fit-content;
+  border: 0.2px solid black;
+  border-radius: 2px;
+}
+.care-tips .img img:hover,
+.training-tips .img img:hover,
+.health-tips .img img:hover {
+  transition: 0.3s;
+  transform: scale(1.1);
+  overflow: hidden;
+}
+.care-tips ul {
+  margin-left: 30px;
+}
+.care-tips .img {
+  position: relative;
+  left: 600px;
+  top: -100px;
+}
+
+.training-tips {
+  display: block;
+  margin-left: 40%;
+}
+.training-tips ul {
+  margin-left: 30px;
+}
+.training-tips .img {
+  position: relative;
+  left: -400px;
+  top: -100px;
+}
+
+.health-tips ul {
+  margin-left: 30px;
+}
+.health-tips .img {
+  position: relative;
+  left: 600px;
+  top: -100px;
+}
+@media (max-width: 768px) {
+  .care-tips .img {
+    left: 0;
+    top: 0;
+  }
+  .care-tips,
+  .training-tips,
+  .health-tips {
+    width: 100%;
+    position: relative;
+    left: 0;
+    top: 0;
+    margin-bottom: 30px;
+    margin: 10px;
+    margin-left: 0;
+  }
+}
+.testimonials {
+  display: block;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: fit-content; /* Adjust width and margin as needed */
+  margin-bottom: 30px; /* Adjust margin as needed */
+  margin-left: 20px;
+  box-shadow: 0px 4px 4px -2px rgba(0, 0, 0, 0.4);
+}
+.testimonial h2 {
+  margin-left: 40%;
+  font-size: 32px;
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 4px -2px rgba(0, 0, 0, 0.4);
+}
+.testimonial-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 50px;
+}
+blockquote {
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0px 4px 4px -2px rgba(179, 176, 176, 0.4);
+  font-size: 16px;
+  line-height: 1.5;
+  font-style: normal;
+  margin-bottom: 20px;
+}
+cite {
+  font-size: 14px;
+  font-style: italic;
+  text-align: right;
+  margin-top: 10px;
+}
+/* news update */
+.news-updates {
+  padding: 50px 0; /* Adjust padding as needed */
+  text-align: center;
+}
+
+.news-updates h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.blog-posts {
+  display: flex;
+  margin-left: 60px;
+
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.blog-post {
+  width: calc(50% - 40px); /* Adjust width and margin as needed */
+  margin-bottom: 30px; /* Adjust margin as needed */
+  float: left;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.blog-post:nth-child(even) {
+  float: right;
+}
+.blog-post h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.blog-post p {
+  text-align: left;
+  margin-bottom: 10px;
+}
+.blog-post .img {
+  display: block;
+  width: 300px; /* Adjust width as needed */
+  height: 200px; /* Adjust height as needed */
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px -2px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  position: relative;
+  left: 70%;
+}

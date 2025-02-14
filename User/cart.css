@@ -1,0 +1,111 @@
+/* Reset and general styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Cart container styles */
+.cart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.cart-title {
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+  text-transform: uppercase;
+}
+
+/* Cart list styles */
+.cart-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Center items with equal space */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cart-item {
+  width: calc(33.33% - 20px); /* Three items per row with margin adjustments */
+  margin: 10px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.cart-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.cart-item-image {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+}
+
+.cart-item-details {
+  padding: 15px;
+}
+
+.cart-item-name {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.cart-item-price {
+  font-size: 18px;
+  color: #666;
+}
+
+/* Button styles */
+.buy-button,
+.see-more-button,
+.delete-button {
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+  width: 100%; /* Full width */
+}
+
+.buy-button {
+  background-color: #4caf50;
+}
+
+.see-more-button {
+  background-color: #007bff;
+}
+
+.delete-button {
+  background-color: #f44336;
+}
+
+.buy-button:hover,
+.see-more-button:hover,
+.delete-button:hover {
+  opacity: 0.9; /* Reduce opacity on hover for a subtle effect */
+}
